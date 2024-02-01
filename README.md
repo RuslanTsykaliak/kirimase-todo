@@ -1,6 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Setting Up the App with Kirimase
 
-## Getting Started
+To set up the app with Kirimase, follow these steps:
+
+```bash
+npx create-next-app@latest kirimase-todo
+cd kirimase-todo
+
+bun i
+
+bun install -g kirimase
+
+kirimase init
+
+bunx kirimase@latest generate
+
+bun run db:migrate
+bun run db:migrate 
+
+bun add @radix-ui/react-dialog
+bun add @radix-ui/react-checkbox
+```
+
+After following these steps, your app should be set up with Kirimase.
+
+## Running the App
 
 First, run the development server:
 
